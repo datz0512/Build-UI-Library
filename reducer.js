@@ -1,5 +1,5 @@
 const init ={
-    cars:['BMW']
+    cars:['BMW','Porsche']
 }
 
 export default function reducer(state = init, action, args){
