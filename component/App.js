@@ -10,7 +10,7 @@ function App({ cars }){
         <ul>
             ${cars.map(car => `<li>${car}</li>`)}
         </ul>
-        <button onclick="dispatch('ADD', 'Porsche')">Add car</button>
+        <button onclick="dispatch('ADD', 'Mercedes')">Add car</button>
     `
 }
 
