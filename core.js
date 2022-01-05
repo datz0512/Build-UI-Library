@@ -10,14 +10,12 @@ export default function html([first, ...strings], ...values) {
 export function createStore(reducer){
     let state = reducer()
     const roots = new Map()
-
     function render(){
         for (const [root, component] of roots){
             const output = component()
             root.innerHTML = output
         }
     }
-
     return{
         attach(component, root){
             roots.set(root, component)
