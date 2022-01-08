@@ -1,7 +1,8 @@
 # Build-UI-LIbrary
 LUỒNG CHẠY CODE:
 
-1. Chạy script.js 
+**1. CHẠY SCRIPT.JS**
+
 1.1_ import { attach } from "./store.js";
 
 1.2_ attach(App, document.getElementById('root'))   // truyền đối số: component và  root.
@@ -20,13 +21,20 @@ LUỒNG CHẠY CODE:
             }
         }
 
-==> +, map qua roots, nhận lại root vừa xét và component. Và component là file App (App là 1 cái hàm). 
+==> 
+
+    +, map qua roots, nhận lại root vừa xét và component. Và component là file App (App là 1 cái hàm). 
+
     +, Khi core.js chạy nó sẽ chạy component().
+
     +, Trong trường hợp đầu tiên, nó sẽ gọi hàm App (hàm App bên App.js) => Nó sẽ nhận những value của hàm App (những cái html).
+
     +, html (App.js) xử lý rồi lưu vào output. Và output sẽ đẩy vào root.innerHTML => render ra view của ta.
 
-2. LOGIC REACT
+**2. LOGIC REACT**
+
 2.1_ Store là trung tâm => createStore là hàm nhận đối số là reducer.
+    
     +, Và nó mong muốn reducer trong trường hợp mặc định phải return lại 1 giá trị khởi tạo luôn để nó làm state ban đầu  let state = reducer().
 
     +, Chính vì vậy, ban đầu ta có 1 init mặc định sẵn của reducer và state ban đầu của reducer chính là init luôn.
