@@ -21,8 +21,8 @@ export function createStore(reducer){
             roots.set(root, component)
             render()
         },
-        connect(selector = (state) =>  state){
-            return component => (props, ...args) => 
+        connect(selector = state => state){
+            return component => (props,...args) => 
             component(Object.assign({}, props, selector(state), ...args)) 
         },
         dispatch(action, ...args){
