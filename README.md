@@ -1,4 +1,4 @@
-# Build-UI-LIbrary
+# Build-UI-Library
 
 ## LUỒNG CHẠY CODE:
 ## 1. CHẠY SCRIPT.JS
