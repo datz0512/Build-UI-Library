@@ -4,6 +4,7 @@ import { connect } from '../store.js'
 const connector = connect(state => ({
     cars: state.cars
 }))
+
 export default connector(App)
 
 function App({ cars }){
